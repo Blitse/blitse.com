@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blitse - Vente en Gros B2B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/blitse_logo_svg.svg" alt="Blitse Logo" class="logo-img">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <button class="close-menu" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="index.html" class="active">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="catalogue.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Catalogue</span>
+                </a>
+                <a href="about.html">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Qui sommes-nous</span>
+                </a>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenue chez Blitse</h1>
+                <p>Votre partenaire de confiance pour l'approvisionnement en gros</p>
+                <div class="hero-buttons">
+                    <a href="catalogue.html" class="cta-button">Découvrir nos produits</a>
+                    <a href="contact.html" class="cta-button cta-secondary">Demander un devis</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-box-open"></i>
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Produits disponibles</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <span class="stat-number">24h</span>
+                    <span class="stat-label">Délai de livraison</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Clients satisfaits</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe-europe"></i>
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Pays livrés</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Large Catalogue</h3>
+                    <p>Plus de 1000 références en électronique pour répondre à tous vos besoins</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Livraison Express</h3>
+                    <p>Expédition rapide dans toute l'Europe avec suivi en temps réel</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Conseil Expert</h3>
+                    <p>Une équipe de spécialistes à votre écoute pour vous guider</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Service Premium</h3>
+                    <p>Un accompagnement personnalisé pour chaque client</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Besoin d'un devis personnalisé ?</h2>
+                <p>Notre équipe est à votre disposition pour étudier vos besoins et vous proposer la meilleure offre.</p>
+                <a href="contact.html" class="cta-button">Contactez-nous</a>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <h2>Nos Catégories Phares</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>PC & Portables</h3>
+                    <a href="catalogue.html?category=PC%20portable" class="category-link">Découvrir</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Smartphones</h3>
+                    <a href="catalogue.html?category=Téléphone" class="category-link">Découvrir</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-tablet-alt"></i>
+                    <h3>Tablettes</h3>
+                    <a href="catalogue.html?category=Tablette" class="category-link">Découvrir</a>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Écrans</h3>
+                    <a href="catalogue.html?category=Ecrans%20de%20pc" class="category-link">Découvrir</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/blitse_logo_svg.svg" alt="Blitse Logo">
+                </div>
+                <p>123 Rue du Commerce<br>75001 Paris, France</p>
+                <p>Tél: +33 1 23 45 67 89<br>Email: contact@blitse.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions générales</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Blitse. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

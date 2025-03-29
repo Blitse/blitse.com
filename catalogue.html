@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - Blitse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/blitse_logo_svg.svg" alt="Blitse Logo" class="logo-img">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <button class="close-menu" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <a href="index.html" class="active">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="catalogue.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Catalogue</span>
+                </a>
+                <a href="about.html">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Qui sommes-nous</span>
+                </a>
+                <a href="contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalogue-section">
+            <div class="catalogue-layout">
+                <aside class="filters-sidebar">
+                    <div class="filters-sticky">
+                        <h2>Filtres</h2>
+                        <div class="filter-group">
+                            <div class="filter-header" onclick="toggleFilterGroup('category')">
+                                <h3>Catégories</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="filter-options" id="categoryFilters">
+                                <!-- Filled dynamically by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <div class="filter-header" onclick="toggleFilterGroup('brand')">
+                                <h3>Marques</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="filter-options" id="brandFilters">
+                                <!-- Filled dynamically by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <div class="filter-header" onclick="toggleFilterGroup('price')">
+                                <h3>Prix</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="filter-options" id="priceFilters">
+                                <!-- Filled dynamically by JavaScript -->
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <div class="filter-header" onclick="toggleFilterGroup('color')">
+                                <h3>Couleurs</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="filter-options" id="colorFilters">
+                                <!-- Filled dynamically by JavaScript -->
+                            </div>
+                        </div>
+                        <button class="reset-filters" onclick="resetFilters()">Réinitialiser les filtres</button>
+                    </div>
+                </aside>
+                <div class="products-container">
+                    <div class="sorting-controls">
+                        <select id="sortSelect" onchange="handleSortChange(this.value)">
+                            <option value="default">Tri par défaut</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="name-asc">Nom A-Z</option>
+                            <option value="name-desc">Nom Z-A</option>
+                        </select>
+                    </div>
+                    <div class="active-filters" id="activeFilters">
+                        <!-- Active filters will be shown here -->
+                    </div>
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be added dynamically via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/blitse_logo_svg.svg" alt="Blitse Logo">
+                </div>
+                <p>123 Rue du Commerce<br>75001 Paris, France</p>
+                <p>Tél: +33 1 23 45 67 89<br>Email: contact@blitse.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="about.html">À propos de nous</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="terms.html">Conditions générales</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Blitse. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
